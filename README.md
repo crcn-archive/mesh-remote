@@ -12,4 +12,16 @@ bus(mesh.op("tail")).pipe(mesh.open(remote({
 })));
 
 
+// syntax
+remote({
+  channel: "blarg",
+  client: {
+    on: function(channel, handler) {
+    },
+    emit: function(channel, operation) {
+    }
+  }
+});
+
+
 ```
